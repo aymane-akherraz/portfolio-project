@@ -1,0 +1,12 @@
+:root {
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    min-height: 100vh;
+}
+ body, #root{
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}

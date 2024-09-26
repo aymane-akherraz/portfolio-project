@@ -1,0 +1,172 @@
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 300;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 5px;
+}
+.navbar {
+    box-shadow: 0px 1px 5px rgb(196, 196, 196);
+    background-color: white;
+}
+nav strong a {
+    text-decoration: none;
+    font-weight: 400;
+}
+.wLogo{
+    color: white;
+}
+.bLogo{
+    color: black;
+}
+nav .container {
+    display: flex;
+    align-items: center;
+}
+nav .container strong{
+    font-size: x-large;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav .user_conx {
+    margin: 0 10px;
+    display: flex;
+    align-items: center;
+}
+a.link {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.1rem;
+    border-radius: 20px;
+}
+.user_conx .signUp {
+    padding: 8px 20px;
+    letter-spacing: 1px;
+}
+button.link {
+    position: relative;
+    padding: 8px 20px;
+    display: flex;
+    border: none;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+button span {
+    display: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    border: 3px solid white;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: rotate .5s linear infinite;
+}
+button.animate {
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+.animate span {
+    display: inline-block;
+}
+.signIn {
+    outline: white solid 1px;
+    color: white;
+    transition: .5s;
+}
+.signIn:hover {
+    background-color: white;
+    color: #00b0cf;
+    outline: none;
+}
+nav .user_conx .signIn:hover a{
+    color: white;
+}
+.userIcon {
+    margin-left: 15px;
+    cursor: pointer;
+}
+.userIcon:hover {
+    opacity: 0.8;
+}
+.iconMenu {
+    position: absolute;
+    right: 10px;
+    top: 70px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: white;
+    border-radius: .75rem;
+    box-shadow: 0px 1px 5px rgb(196, 196, 196);
+}
+.iconMenu a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+.iconMenu a:hover{
+    background-color: #f0f0f0;
+}
+.iconMenu a:hover{
+    color: rgb(41, 41, 255);
+}
+.iconMenu a:first-child::before{
+    content: url('../public/images/icons8-male-user-24.png');
+    margin-right: 7px;
+    transform: translateY(5%);
+}
+.iconMenu a:first-child:hover::before{
+    content: url('../public/images/icons8-male-user-24-b.png');
+    margin-right: 7px;
+}
+.iconMenu a:nth-child(2)::before{
+    content: url('../public/images/icons8-document-24.png');
+    margin-right: 7px;
+    transform: translateY(5%);
+}
+.iconMenu a:nth-child(2):hover::before{
+    content: url('../public/images/icons8-document-24-b.png');
+    margin-right: 7px;
+}
+.iconMenu a:last-child::before{
+    content: url('../public/images/icons8-éteindre-24.png');
+    margin-right: 7px;
+    transform: translateY(5%);
+}
+.iconMenu a:last-child:hover::before{
+    content: url('../public/images/icons8-éteindre-24-b.png');
+    margin-right: 7px;
+}
+.pnl {
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    opacity: 0;
+    transform: translateX(-50%);
+    text-align: center;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    z-index: 300;
+    padding: 15px 30px;
+    color: white;
+    font-size: 18px;
+    transition: opacity .5s, top .5s ;
+}
+.panel {
+    opacity: 1;
+    top: 80px;
+}
